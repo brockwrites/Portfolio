@@ -1,7 +1,7 @@
 """
 Author: Brock Price
 Date: 20231001
-Purpose: Grab GitLab & Gerrit merge information and publish it to a Monday.com board, for reporting.
+Purpose: Get GitLab & Gerrit merge information and publish it to a Monday.com board, for reporting.
 """
 import gitlab
 from datetime import date
