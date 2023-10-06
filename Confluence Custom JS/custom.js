@@ -1,3 +1,9 @@
+/*
+Author: Brock Price
+Date: 20230601
+Purpose: This JavaScript personalizes the client-facing Scroll Viewport (Help Center Theme) for Confluence.
+*/
+
 /* =======
 Share Page
 ========== */
