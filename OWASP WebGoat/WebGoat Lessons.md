@@ -22,3 +22,7 @@ This section covers encoding, hashing, encryption, digital signing, keystores, s
 **Symmetric & Asymmetric Encryption:** Asymmetric encryption uses a pair of public and private keys for data encryption and decryption, where the public key is widely shared, but only the private key can decrypt messages. Symmetric encryption, on the other hand, uses a single shared key for both encryption and decryption, and this key must be kept confidential between the communicating parties.
 
 **HTTPS:** HTTPS uses both symmetric and asymmetric keys. It leverages an asymmetric key exchange process so that a symmetric key can be shared between browser and webserver.
+
+**Determine a Signature from a Private Key:** WebGoat wants us to determine the modulus of an RSA key as a hex string, and then calculate a signature for that hex string using the key. For this exercise, I spin up a Linux virtual maching to create a BASH script to determine the values.
+
+**TBA**
