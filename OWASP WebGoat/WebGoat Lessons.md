@@ -12,7 +12,8 @@ Covers authenticating as a regular user, but then gaining access to data from ot
 ### A1: Spoofing an Authentication Cookie
 [Video](https://www.youtube.com/watch?v=-n4OmhUN3vA) Like previous lessons, this one requires intercepting a login request. In Burp Suite, we send this login request to "Repeater" and find an authentication cookie. On review, we see the cookie is Base64 encoded. So, we run it through a Base64 decoder, which reveals hex values. We decode the hex values to find the username, spelled backwards. We then encode our own username, create a cookie value, and use "Repeater" to authenticate.
 ## Crytographic Failures
-[Video](https://www.youtube.com/watch?v=9lQJa4zHRYM&t=626s)This (single) lessons covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
+[Video](https://www.youtube.com/watch?v=9lQJa4zHRYM&t=626s)
+This (single) lessons covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
 ### A2: Crypto Basics
 **Base64:** Bas64 encoding is not cryptography, but it has similarities with cryptography. The first assignment is to decode a Base64 encoded string used for Basic authentication. Next, this lesson considers other types of encoding: URL encoding (e.g., replacing spaces with "%20"), HTML encoding, UUEncode, XOR encoding. Hashing is discussed, as a means for identifying data alteration.
 **Hashing:** Hashing is irreversible and used for data integrity. It is not to be used for passwords, as the hashes themselves can be stored in a dictionary that cross-references the plain-text origin of the hash. Salted hashes can be more effective for this purpose, as random characters are added, making it difficult for an attacker to have a complete dictionary to cross-reference. For reference: SHA256 hashes are longer than MD5. MD5 produces a 128-bit output, and SHA256 produces a 256-bit output.
