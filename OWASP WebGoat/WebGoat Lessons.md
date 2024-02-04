@@ -16,6 +16,9 @@ Covers authenticating as a regular user, but then gaining access to data from ot
 This (single) lessons covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
 ### A2: Crypto Basics
 **Base64:** Bas64 encoding is not cryptography, but it has similarities with cryptography. The first assignment is to decode a Base64 encoded string used for Basic authentication. Next, this lesson considers other types of encoding: URL encoding (e.g., replacing spaces with "%20"), HTML encoding, UUEncode, XOR encoding. Hashing is discussed, as a means for identifying data alteration.
+
 **Hashing:** Hashing is irreversible and used for data integrity. It is not to be used for passwords, as the hashes themselves can be stored in a dictionary that cross-references the plain-text origin of the hash. Salted hashes can be more effective for this purpose, as random characters are added, making it difficult for an attacker to have a complete dictionary to cross-reference. For reference: SHA256 hashes are longer than MD5. MD5 produces a 128-bit output, and SHA256 produces a 256-bit output.
+
 **Symmetric & Asymmetric Encryption:** Asymmetric encryption uses a pair of public and private keys for data encryption and decryption, where the public key is widely shared, but only the private key can decrypt messages. Symmetric encryption, on the other hand, uses a single shared key for both encryption and decryption, and this key must be kept confidential between the communicating parties.
+
 **HTTPS:** HTTPS uses both symmetric and asymmetric keys. It leverages an asymmetric key exchange process so that a symmetric key can be shared between browser and webserver.
