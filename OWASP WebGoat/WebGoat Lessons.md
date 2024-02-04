@@ -13,7 +13,7 @@ Covers authenticating as a regular user, but then gaining access to data from ot
 [Video](https://www.youtube.com/watch?v=-n4OmhUN3vA) Like previous lessons, this one requires intercepting a login request. In Burp Suite, we send this login request to "Repeater" and find an authentication cookie. On review, we see the cookie is Base64 encoded. So, we run it through a Base64 decoder, which reveals hex values. We decode the hex values to find the username, spelled backwards. We then encode our own username, create a cookie value, and use "Repeater" to authenticate.
 ## Crytographic Failures
 [Video](https://www.youtube.com/watch?v=9lQJa4zHRYM&t=626s)
-This (single) lessons covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
+This section covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
 ### A2: Crypto Basics
 **Base64:** Bas64 encoding is not cryptography, but it has similarities with cryptography. The first assignment is to decode a Base64 encoded string used for Basic authentication. Next, this lesson considers other types of encoding: URL encoding (e.g., replacing spaces with "%20"), HTML encoding, UUEncode, XOR encoding. Hashing is discussed, as a means for identifying data alteration.
 
