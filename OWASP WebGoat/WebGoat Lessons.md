@@ -25,4 +25,4 @@ This section covers encoding, hashing, encryption, digital signing, keystores, s
 
 **Determine a Signature from a Private Key:** WebGoat wants us to determine the modulus of an RSA key as a hex string, and then calculate a signature for that hex string using the key. For this exercise, I spin up a Linux virtual maching to create a BASH script to determine the values.
 
-**TBA**
+**What is a Keystore? What is a Truststore?** Truststore is used for the storage of certificates from the trusted Certificate Authority (CA), which is used in the verification of the certificate provided by the server in an SSL connection. A Keystore is used to store the private key and own identity certificate to be identified for verification.
