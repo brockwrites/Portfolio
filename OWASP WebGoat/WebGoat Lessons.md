@@ -1,4 +1,3 @@
-_Helpful Tools:_ https://savesubs.com/
 ## Broken Access Control
 These lessons pertain to web app (AppSec) access failures.
 ### A1: Hijack a session
