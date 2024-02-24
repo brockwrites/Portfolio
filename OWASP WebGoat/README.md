@@ -2,7 +2,7 @@
 OWASP WebGoat is a tool/download to help with learning about web application security.
 * It is intentionally insecure, with the purpose of providing a controlled environment for developers, testers, and security professionals to enhance their skills.
 * As part of the ***Open Web Application Security Project (OWASP),*** WebGoat offers a platform to practice identifying and addressing common web vulnerabilities, such as SQL injection, cross-site scripting, and others.
-## Broken Access Control
+## Broken Access Control Summary
 These lessons pertain to web app (AppSec) access failures.
 ### A1: Web Security: Hijack a session
 [Video 1](https://www.youtube.com/watch?v=YO8rsCMVUyY) & [Video 2](https://www.youtube.com/watch?v=R5YPRhM5GyE)
@@ -14,7 +14,7 @@ Covers authenticating as a regular user, but then gaining access to data from ot
 [Video 1](https://www.youtube.com/watch?v=C-MTbhfXbgg) Page HTML (viewed in Chrome DevTools, for example) could hide elements that make a web app susceptible to hacking. These elements might be links to administrative functions. By modifying requests (Burp Repeater) and revising based on responses, you can gather useful information for hacking.
 ### A1: Spoofing an Authentication Cookie
 [Video](https://www.youtube.com/watch?v=-n4OmhUN3vA) Like previous lessons, this one requires intercepting a login request. In Burp Suite, we send this login request to "Repeater" and find an authentication cookie. On review, we see the cookie is Base64 encoded. So, we run it through a Base64 decoder, which reveals hex values. We decode the hex values to find the username, spelled backwards. We then encode our own username, create a cookie value, and use "Repeater" to authenticate.
-## Crytographic Failures
+## Crytographic Failures Summary
 [Video](https://www.youtube.com/watch?v=9lQJa4zHRYM&t=626s)
 This section covers encoding, hashing, encryption, digital signing, keystores, security defaults, and post-quantum crypto. That's a lot!
 ### A2: Crypto Basics
@@ -29,7 +29,7 @@ This section covers encoding, hashing, encryption, digital signing, keystores, s
 **Determine a Signature from a Private Key:** WebGoat wants us to determine the modulus of an RSA key as a hex string, and then calculate a signature for that hex string using the key. For this exercise, I spin up a Linux virtual maching to create a BASH script to determine the values.
 
 **What is a Keystore? What is a Truststore?** Truststore is used for the storage of certificates from the trusted Certificate Authority (CA), which is used in the verification of the certificate provided by the server in an SSL connection. A Keystore is used to store the private key and own identity certificate to be identified for verification.
-## Injection (SQL Injection, Cross Site Scripting, Path Traversal)
+## Injection (SQL Injection, Cross Site Scripting, Path Traversal) Summary
 **What is Blind SQL Injection?** Attackers inject malicious SQL code without receiving direct feedback on the webpage. Instead, they infer success or failure by observing changes in the application's behavior.
 
 **What is String SQL Injection?** If an application builds SQL queries by concatenating user supplied strings to the query, the application is likely susceptible to String SQL injection. Specifically, if a user supplied string simply gets concatenated to a SQL query without any sanitization, then you may be able to modify the query’s behavior by inserting quotation marks into an input field.
