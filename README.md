@@ -1,4 +1,4 @@
 # Public Portfolio for Brock Price
-👋 ThankS for visiting.
+👋 Thanks for visiting.
 
 This is a public portfolio of coding projects. The code is categorized, above.
