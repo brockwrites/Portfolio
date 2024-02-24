@@ -1,4 +1,4 @@
-JS/CSS are extremely important for the end-user experience.
+JS/CSS are very important for the end-user experience.
 
 🖱️ The **ConfluenceCustom.js** file works with the Confluence Viewport (K15t Scroll Viewport) to customize the client view of software documents and release notes.
 
