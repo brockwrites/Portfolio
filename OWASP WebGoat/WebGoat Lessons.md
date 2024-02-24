@@ -25,3 +25,11 @@ This section covers encoding, hashing, encryption, digital signing, keystores, s
 **Determine a Signature from a Private Key:** WebGoat wants us to determine the modulus of an RSA key as a hex string, and then calculate a signature for that hex string using the key. For this exercise, I spin up a Linux virtual maching to create a BASH script to determine the values.
 
 **What is a Keystore? What is a Truststore?** Truststore is used for the storage of certificates from the trusted Certificate Authority (CA), which is used in the verification of the certificate provided by the server in an SSL connection. A Keystore is used to store the private key and own identity certificate to be identified for verification.
+### A3: Injection (SQL Injection, Cross Site Scripting, Path Traversal)
+**What is Blind SQL Injection?** Attackers inject malicious SQL code without receiving direct feedback on the webpage. Instead, they infer success or failure by observing changes in the application's behavior.
+
+**What is String SQL Injection?** If an application builds SQL queries by concatenating user supplied strings to the query, the application is likely susceptible to String SQL injection. Specifically, if a user supplied string simply gets concatenated to a SQL query without any sanitization, then you may be able to modify the query’s behavior by inserting quotation marks into an input field.
+
+**What is SQL Query Chaining?** With query chaining, you append one or more queries to the end of the actual query. You can do this by using the ; metacharacter.
+
+**What is Cross Site Scripting?** _To Be Provided_
