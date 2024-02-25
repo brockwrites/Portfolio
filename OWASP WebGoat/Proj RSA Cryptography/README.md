@@ -18,7 +18,7 @@ This script demonstrates basic cryptography, including hashing and RSA encryptio
    python crypto_demo.py
    
 ## Example Output
-_Original Message:_ Hello, cryptography
+_Original Message:_ Hello, cryptography!
 
 _Hashed Message:_ 5c074494783d829120008969c13d79b5f00c1d60d6db471c792e5a0331cbed58
 
