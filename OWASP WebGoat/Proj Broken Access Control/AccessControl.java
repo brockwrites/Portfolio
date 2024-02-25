@@ -1,6 +1,6 @@
 /*
-Broken Access Control is a situation where the application does not properly enforce restrictions on what authenticated users are allowed to do.
-In this example, a user authentication system demonstrates broken access control.
+Broken Access Control is a situation where an application doesn't properly enforce restrictions on what authenticated users are allowed to do.
+In this example, a user authentication system displays broken access control.
 --I have a basic authentication system with a User class representing user information, an AuthService class for authentication, and a UserController class to handle user requests.
 --The UserController simulates a broken access control scenario by allowing special access to sensitive data for a specific user (user1), and doesn't use roles to assign permissions.
 */
