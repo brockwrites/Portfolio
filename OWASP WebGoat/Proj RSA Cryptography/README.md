@@ -3,14 +3,13 @@ This script demonstrates basic cryptography, including hashing and RSA encryptio
 - `crypto_demo.py`: Python script showcasing use of hashlib for message hashing and the Crypto library for RSA encryption and decryption.
 
 ## Dependencies
-- Python 3.x
-- pycryptodome library (install using `pip install pycryptodome`)
+- Python (3.x) and pycryptodome library (install using `pip install pycryptodome`)
 
-## Usage
+## To Use
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/crypto-demo.git
-2. Install the required dependencies:
+2. Install the dependencies:
    ```bash
    pip install pycryptodome
 3. Run the script:
