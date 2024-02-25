@@ -1,6 +1,5 @@
-This script demonstrates basic cryptography, including hashing and RSA encryption/decryption. Feel free to reuse/share, for training purposes.
-
 ## Overview
+This script demonstrates basic cryptography, including hashing and RSA encryption/decryption. Feel free to reuse/share, for training purposes.
 - `crypto_demo.py`: Python script showcasing the use of hashlib for message hashing and the Crypto library for RSA encryption and decryption.
 
 ## Dependencies
