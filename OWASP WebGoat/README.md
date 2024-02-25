@@ -36,4 +36,7 @@ This section covers encoding, hashing, encryption, digital signing, keystores, s
 
 **What is SQL Query Chaining?** With query chaining, you append one or more queries to the end of the actual query. You can do this by using the ; metacharacter.
 
-**What is Cross Site Scripting?** _To Be Provided_
+**What is Cross Site Scripting?** Three types:
+* Stored XSS (Persistent XSS): The injected script is permanently stored on the target server, and every time a user visits the affected page, the script is served to their browser.
+* Reflected XSS (Non-persistent XSS): The injected script is embedded in a URL, and when a user clicks on a malicious link or visits a specially crafted website, the script is reflected off the web server and executed in the user's browser.
+* DOM-based XSS: This type of XSS involves the manipulation of the Document Object Model (DOM) in a user's browser. The attack occurs on the client side, and the malicious script modifies the DOM to achieve its goals.
