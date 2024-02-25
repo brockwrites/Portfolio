@@ -1,3 +1,9 @@
+/*
+Author: Brock Price
+Date: 20230701
+Purpose: This CSS personalizes the client-facing Scroll Viewport (Help Center Theme) for Confluence.
+*/
+
 /* ===================
 FRONT PAGE ADJUSTMENTS
 ====================== */
